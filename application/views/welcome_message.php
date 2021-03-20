@@ -4,7 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Welcome to CodeIgniter</title>
+	<title>Gestion de usuarios</title>
 
 	<style type="text/css">
 
@@ -65,23 +65,50 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	}
 	</style>
 </head>
+
 <body>
-
 <div id="container">
-	<h1>Welcome to CodeIgniter!</h1>
-
-	<div id="body">
-		<p>The page you are looking at is being generated dynamically by CodeIgniter.</p>
-
-		<p>If you would like to edit this page you'll find it located at:</p>
-		<code>application/views/welcome_message.php</code>
-
-		<p>The corresponding controller for this page is found at:</p>
-		<code>application/controllers/Welcome.php</code>
-
-		<p>If you are exploring CodeIgniter for the very first time, you should start by reading the <a href="user_guide/">User Guide</a>.</p>
-	</div>
-
+	<h1>Welcome to CodeIgniter CRUD!</h1>
+		<?php echo base_url('/application/views/vistas_crud/insertar.php');?>
+		<nav>
+				<div class="navbar-nav">
+					<a class="nav-item nav-link" href="<?= base_url('') ?>">Inicio</a>
+					<a class="nav-item nav-link" href="<?php echo base_url();?>/application/views/vistas_crud/buscar">Buscar</a>
+					<a class="nav-item nav-link" href="<?= base_url('/application/views/vistas_crud/insertar.php') ?>">Insertar</a>
+					<a class="nav-item nav-link" href="<?= base_url('/application/views/vistas_crud/editar.php') ?>">Editar</a>
+					<a class="nav-item nav-link" href="<?= base_url('/application/views/vistas_crud/borrar.php') ?>">Borrar</a>
+				</div>
+		</nav>
+	<table id="tabla_usuarios">
+		<thead>
+			<tr>
+				<th>LOGIN</th>
+				<th>PASSWORD</th>
+				<th>EMAIL</th>
+				<th>ROL</th>
+			</tr>
+		</thead>
+		<tbody>
+			<?php 
+				//hay contenido en el arreglo usuarios?
+				if($usuarios){
+					//cierro clausla php para trabajar tabla en html
+					foreach($usuarios as $usuario){ ?>
+						<tr>
+							<td><?= $usuario -> login ?></td>
+							<td><?= $usuario -> password ?></td>
+							<td><?= $usuario -> email ?></td>
+							<td><?= $usuario -> rol ?></td>
+						</tr>
+						<?php
+						//abro clausula php para poner el cierre del foreach y el else del if (estos son comandos propios de php)
+					}
+				}
+				else{ ?>
+					<td class="text-center" colspan="6">No hay usuarios registrados</td>
+				<?php } ?>
+		</tbody>
+	</table>
 	<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds. <?php echo  (ENVIRONMENT === 'development') ?  'CodeIgniter Version <strong>' . CI_VERSION . '</strong>' : '' ?></p>
 </div>
 
