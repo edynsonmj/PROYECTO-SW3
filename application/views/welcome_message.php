@@ -74,7 +74,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<div class="navbar-nav">
 					<a class="nav-item nav-link" href="<?= base_url('') ?>">Inicio</a>
 					<a class="nav-item nav-link" href="<?php echo base_url();?>/application/views/vistas_crud/buscar">Buscar</a>
-					<a class="nav-item nav-link" href="<?= base_url('/application/views/vistas_crud/insertar.php') ?>">Insertar</a>
+					<a class="nav-item nav-link" href="<?= base_url() ?>/Datos/cargarform">Insertar</a>
 					<a class="nav-item nav-link" href="<?= base_url('/application/views/vistas_crud/editar.php') ?>">Editar</a>
 					<a class="nav-item nav-link" href="<?= base_url('/application/views/vistas_crud/borrar.php') ?>">Borrar</a>
 				</div>

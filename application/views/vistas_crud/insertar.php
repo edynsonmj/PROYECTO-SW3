@@ -1,25 +1,26 @@
 <?php
-	defined('BASEPATH') OR exit('No direct script access allowed');
-?><!DOCTYPE html>
+defined('BASEPATH') or exit('No direct script access allowed');
+?>
+<!DOCTYPE html>
 <html lang="es">
-	<head>
-		<meta charset="utf-8">
-		<title>Bienvenido a Codeingniter</title>
-	</head>
-	<body>
+<?php $this->load->view('partes/header'); ?>
 
-		<form id="datos" name="datos" method="POST" action="<?php echo base_url(); ?>index.php/datos/registrar"> 
+<body>
 
-			Nombre de usuario <input name="login" type="text"/><br />
-			password <input name="password" type="text"/><br />
-			Rol <input name="rol" type="text"/><br />
-			Correo electronico <input name="email" type="text"/><br />
+	<form id="datos" name="datos" method="POST" action="<?php echo base_url(); ?>index.php/datos/insertUsuario">
 
-			<input type="submit" value="registrar" />
-		</form>
+		Nombre de usuario <input name="login" type="text" minlength="2" /><br />
+		password <input name="password" type="text" minlength="5" /><br />
+		Role <select name="rol">
+			<option value="administrador">Administrador</option>
+			<option value="jefe">Jefe</option>
+			<option value="cliente" selected>Cliente</option>
+		</select>
+		<br/>
+		Correo electronico <input name="email" type="email" /><br />
+		<input type="submit" value="registrar" />
+	</form>
 
-	</body>
+</body>
+
 </html>
-
-
-
