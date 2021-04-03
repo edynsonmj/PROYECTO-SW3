@@ -11,7 +11,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 	foreach ($usuarios as $usuario);
 	//pasando id como parametro
 	?>
-	<h1>Editar Usuario: <?php $usuario->login ?></h1>
+	<h2 class=titulo>Editar Usuario: <?= $usuario->login ?></h2>
 	<div class=contenForm>
 		<form class=datosForm name="datos" method="POST" action="<?php echo base_url(); ?>index.php/datos/updateUsuario">
 			<label class=labelForm>Login</label><br> <input class=campoForm name="login" type="text" minlength="2" readonly required value="<?= (isset($usuario) ? $usuario->login : '') ?>"><br><br>
