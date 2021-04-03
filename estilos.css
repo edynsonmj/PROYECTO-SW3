@@ -48,3 +48,20 @@ body{
     border-radius: 5px;
     border:0px;
 }
+#container{
+    padding-top: 10px;
+    padding-left: 10%;
+    width: 70%;
+    background-color: grey;
+}
+#tabla_usuarios{
+   width: 100%;
+   background-color:white;
+   text-align: center;
+   border-collapse: collapse;
+   margin: 0 0 1em 0;
+   caption-side: top;
+   border-radius: 15px;
+   line-height: 30px;
+   color: black;
+}
