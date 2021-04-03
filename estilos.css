@@ -1,0 +1,50 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    background-color:gray;
+}
+.main-header{
+    padding-left: 50px;
+    background-color:#363636;
+    color:white;
+    width: 100%;
+}
+.navbar-titulo{
+    color:white;
+    font-weight: 700;
+    font-size:x-large;
+}
+.navbar{
+    width: 100%;
+}
+.nav-item{
+    color:aliceblue;
+    font-weight: 700;
+}
+#datos{
+    padding-left: 60%;
+    background-color:#363636;
+    color:white;
+    width: 100%;
+    font-weight: 700;
+    font-size: larger;
+    height: 40px;
+}
+#txtBuscar{
+    background-color: grey;
+    width: 15%;
+    height: 70%;
+    border:0px;
+}
+#btnBuscar{
+    height: 70%;
+    font-weight: 700;
+    font-size: smaller;
+    background-color: orangered;
+    color: seashell;
+    border-radius: 5px;
+    border:0px;
+}
