@@ -3,6 +3,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 ?>
 <!DOCTYPE html>
 <html lang="es">
+<?php $this->load->view('partes/head'); ?>
 <?php $this->load->view('partes/header'); ?>
 
 <body>
@@ -22,5 +23,5 @@ defined('BASEPATH') or exit('No direct script access allowed');
 	</form>
 
 </body>
-
+<?php $this->load->view('partes/foot'); ?>
 </html>

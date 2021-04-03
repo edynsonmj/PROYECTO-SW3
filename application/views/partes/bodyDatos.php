@@ -1,3 +1,5 @@
+<aside>
+</aside>
 <body>
 <div id="container">
 	<table id="tabla_usuarios">

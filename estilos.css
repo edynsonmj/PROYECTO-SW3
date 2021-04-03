@@ -10,7 +10,7 @@ body{
     padding-left: 50px;
     background-color:#363636;
     color:white;
-    width: 100%;
+    width: 100% - padding-left;
 }
 .navbar-titulo{
     color:white;
@@ -26,20 +26,20 @@ body{
 }
 #datos{
     padding-left: 60%;
+    width: 100% - padding-left;
     background-color:#363636;
     color:white;
-    width: 100%;
     font-weight: 700;
     font-size: larger;
     height: 40px;
 }
 #txtBuscar{
     background-color: grey;
-    width: 15%;
+    width: 40%;
     height: 70%;
     border:0px;
 }
-#btnBuscar{
+.boton{
     height: 70%;
     font-weight: 700;
     font-size: smaller;
@@ -48,14 +48,42 @@ body{
     border-radius: 5px;
     border:0px;
 }
+.contenForm{
+    font-weight: 700;
+    height: 470px;
+    padding-left: 30%;
+    padding-top: 10px;
+    background-color: black;
+}
+.datosForm{
+    /*font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;*/
+    padding: 5px;
+    width: 50%;
+    text-align: center;
+    font-size: x-large;
+    background-color: white;
+    border-radius: 15px;
+}
+.campoForm{
+    width: 300px;
+    height: 30px;
+    border: 0px;
+    font-size: medium;
+    font-weight: 600;
+    border-radius: 5px;
+    background-color:lightgray;
+    color: black;
+    text-align: center;
+}
 #container{
     padding-top: 10px;
     padding-left: 10%;
-    width: 70%;
-    background-color: grey;
+    width: 100% - padding-left;
+    height: 450px;
+    background-color: black;
 }
 #tabla_usuarios{
-   width: 100%;
+   width: 90%;
    background-color:white;
    text-align: center;
    border-collapse: collapse;
@@ -64,4 +92,12 @@ body{
    border-radius: 15px;
    line-height: 30px;
    color: black;
+}
+footer{
+    position:absolute;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    background-color: #363636;
+    color:whitesmoke;
 }
