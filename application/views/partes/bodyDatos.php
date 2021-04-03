@@ -14,7 +14,9 @@
 		<tbody>
 			<?php 
 				//hay contenido en el arreglo usuarios?
-				if($usuarios){
+				if($usuarios){?>
+				<td class="text-center" colspan="6"><a href="<?= base_url() ?>/Datos/cargarform">+</a></td>
+				<?php
 					//cierro clausla php para trabajar tabla en html
 					foreach($usuarios as $usuario){ ?>
 						<tr>
@@ -32,6 +34,7 @@
 				else{ ?>
 					<td class="text-center" colspan="6">NO SE ENCONTRARON USUARIOS</td>
 				<?php } ?>
+				<td class="text-center" colspan="6"><a href="<?= base_url() ?>/Datos/cargarform">+</a></td>
 		</tbody>
 	</table>
 </div>
