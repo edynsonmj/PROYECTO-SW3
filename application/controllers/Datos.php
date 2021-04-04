@@ -45,7 +45,7 @@
 			if($resultado){
 				$this->index();
 				}else{
-				echo "error al insertar";
+				$this->load->view('errorCrud/insertar');
 			}
 		}
 		/**
@@ -71,7 +71,7 @@
 				$this->index();
 			}else{
 				//enviar a pagina de error
-				echo "no se actualizo correctamente";
+				$this->load->view('errorCrud/editar');
 			}
 		}
 		/**
@@ -85,8 +85,19 @@
 			if($resultado){
 				$this->index();
 			}else{
-				echo "error al eliminar";
+				$this->load->view('errorCrud/eliminar');
 			}
+		}
+
+		//borrar las funciones luego
+		public function cargarErrorEditar(){
+			$this->load->view('errorCrud/editar');
+		}
+		public function cargarErrorEliminar(){
+			$this->load->view('errorCrud/eliminar');
+		}
+		public function cargarErrorInsertar(){
+			$this->load->view('errorCrud/insertar');
 		}
 	}
 ?>

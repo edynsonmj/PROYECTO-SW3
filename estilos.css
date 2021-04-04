@@ -3,6 +3,7 @@
     padding: 0px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
 body{
     background-color:#363636;
 }
@@ -15,7 +16,7 @@ body{
 .navbar-titulo{
     color:white;
     font-weight: 700;
-    font-size:x-large;
+    font-size:xx-large;
 }
 .navbar{
     width: 100%;
@@ -23,6 +24,9 @@ body{
 .nav-item{
     color:aliceblue;
     font-weight: 700;
+}
+.text-right{
+    text-align: right;
 }
 #datos{
     padding-left: 60%;
@@ -43,6 +47,15 @@ body{
     height: 70%;
     font-weight: 700;
     font-size: smaller;
+    background-color: orangered;
+    color: seashell;
+    border-radius: 5px;
+    border:0px;
+}
+.botonError{
+    height: 70%;
+    font-weight: 700;
+    font-size: x-large;
     background-color: orangered;
     color: seashell;
     border-radius: 5px;
@@ -85,6 +98,11 @@ body{
 .titulo{
     text-align: center;
     color: whitesmoke;
+}
+a{
+    text-decoration: none;
+    font-weight: 700;
+    background-color:transparent
 }
 #tabla_usuarios{
    width: 90%;
